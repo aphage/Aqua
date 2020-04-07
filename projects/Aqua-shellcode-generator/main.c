@@ -10,7 +10,7 @@ LPSTR shellcodeHeader = "/******************************************************
 "MIT License\r\n"
 "\r\n"
 "Copyright (c) 2017 Sheen\r\n"
-"Copyright (c) 2020 aphage\r\n"
+"Copyright (c) 2020 Misaka Mikoto (aphage)\r\n"
 "\r\n"
 "Permission is hereby granted, free of charge, to any person obtaining a copy\r\n"
 "of this software and associated documentation files (the \"Software\"), to deal\r\n"
