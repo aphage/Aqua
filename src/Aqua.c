@@ -2,7 +2,7 @@
 MIT License
 
 Copyright (c) 2017 Sheen
-Copyright (c) 2020 aphage
+Copyright (c) Misaka Mikoto (aphage)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -262,8 +262,8 @@ FARPROC RGetProcAddress(HMODULE hModule, LPSTR name, WORD number) {
 	PWORD pOrdinalTable = MakePointer(PWORD, hModule, pImageExportDirectory->AddressOfNameOrdinals);
 
 	DWORD addressOffset = 0;
-	if (name == NULL && number >= pImageExportDirectory->Base) {
-		if (pImageExportDirectory->NumberOfFunctions > (number - pImageExportDirectory->Base))
+	if (name == NULL) {
+		if (number >= pImageExportDirectory->Base && pImageExportDirectory->NumberOfFunctions > (number - pImageExportDirectory->Base))
 			addressOffset = pAddressTable[number - pImageExportDirectory->Base];
 		else
 			return NULL;
