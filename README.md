@@ -1,6 +1,6 @@
 # Aqua
 
-Aqua predecessor comes from [MMLoader](https://github.com/tishion/mmLoader).
+Aqua comes from [MMLoader](https://github.com/tishion/mmLoader) and uses ntdll native api
 
 Combined with Heaven's Gate technology can be achieved Wow64 loading Win64dll
 
