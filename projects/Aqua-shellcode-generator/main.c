@@ -31,6 +31,8 @@ LPSTR shellcodeHeader = "/******************************************************
 "SOFTWARE.\r\n"
 "*/ \r\n"
 "\r\n"
+"#ifndef _AQUA_SHELLCODE_H\r\n"
+"#define _AQUA_SHELLCODE_H\r\n"
 "\r\n"
 "#ifdef __cplusplus\r\n"
 "extern \"C\" {\r\n"
@@ -63,6 +65,7 @@ LPSTR shellcodeEnd = "\r\n};\r\n"
 "\r\n"
 "#ifdef __cplusplus\r\n"
 "}\r\n"
+"#endif\r\n"
 "#endif\r\n";
 
 #ifdef _WIN64
